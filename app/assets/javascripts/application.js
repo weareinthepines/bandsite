@@ -10,8 +10,9 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//= require home
 //= require jquery_ujs
 //= require lib/modernizr-2.6.2.min
 //= require lib/plugins
 //= require lib/underscore
-//= require home
+

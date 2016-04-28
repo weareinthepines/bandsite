@@ -1,10 +1,10 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
-/*$(document).ready(function() {
-    $(window).load(function () {
-        $('.myButton').raptorize({
-            'enterOn' : 'click', //timer, konami-code, click
+$(document).ready(function() {
 
-        });
+    $(".logos").hover(function(){
+        $("#bottom").animate({width: 'toggle'})
     });
-}); */
+
+});
+

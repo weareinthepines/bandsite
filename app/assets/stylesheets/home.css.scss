@@ -1,101 +1,6 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@mixin PlayFair {
-  font-family: 'Playfair Display', serif;
-}
-
-@mixin Raleway {
-  font-family: 'Raleway Dots', cursive;
-}
-.site {
-  background-color: #FDFDE6;
-  height:100vh;
-}
-.itp {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  background-color: transparent;
-  font-size: 5em;
-  color: #215E38;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
-  @include PlayFair;
-}
-
-.itpheader {
-  border-bottom: 1em solid black;
-
-  @include PlayFair;
-
-}
-
-ul {
-  float:left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FDFDE6;
-  width:100%;
-}
-
-.ulright {
-  float: right;
-  width:50%;
-}
-
-.ulleft {
-  float: left;
-  width:50%;
-}
-
-.ulright, .ulleft {
-  width:50%;
-}
-
-li a {
-  display: block;
-  color:   #215E38;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
-}
-
-.itpbody  {
-  background-color: #FDFDE6;
-  width: 100%;
-  display: block;
-  clear: both;
-}
-
-.bccontainer {
-  padding-left:20%;
-  padding-top: 10%;
-}
-
-.bandcamp {
-  width:25%;
-  height: 340px;
-
-}
-
-
-
-
-
-//animations//
-
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -123,4 +28,131 @@ li a {
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+.background {
+  width:100%;
+  position: fixed;
+  overflow: hidden;
+  opacity: .6;
+  bottom:0;
+}
+
+
+.logos {
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  width: 40%;
+  margin: auto;
+  z-index: 2;
+  right: 25%;
+  bottom: 0;
+  opacity: .7;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.white {
+  margin: auto;
+  padding: 1% 3.8%;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.black {
+  margin: auto;
+  padding: 1% 3.8%;
+  background: white;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.logos img:nth-child(2){
+  display: none;
+}
+
+.logos:hover .white {
+  display: none;
+}
+
+.logos:hover img:nth-child(2){
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  position: relative;
+  float: left;
+  font-size: 50px;
+}
+
+li a {
+  position: relative;
+  display: block;
+  color: black;
+  padding: 14px 0px 14px 19px;
+  background-color: white;
+  text-decoration: none;
+}
+
+/*li a:hover {
+  background-color: #111;
+}*/
+
+.menu {
+  background-color: white;
+  display: none;
+}
+
+.logos:hover .menu{
+  display: block;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+#bandcamp {
+  width: 37%;
+  padding-top: 3%;
+  margin-bottom: -4%;
+}
+
+ul li a img{
+  display: block;
+}
+
+.social {
+  width:50%;
+}
+
+#left {
+  width: 20%;
+  margin: auto;
+  padding-left: 1%;
+  padding-top: 6%;
+  float: left;
+}
+
+#right {
+  width: 20%;
+  margin: auto;
+  padding-left: 1%;
+  padding-top: 6%;
+  float: left;
 }

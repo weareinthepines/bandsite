@@ -1,0 +1,28 @@
+@mixin respond-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-max-height($height) {
+  @media screen and (max-height: $height) {
+    @content;
+  }
+}
+
+$desktopXLarge: 1300px;
+$desktopLarge: 1200px;
+$desktopSmall: 1024px;
+$desktopXSmall: 950px;
+$tablet: 768px;
+$mobileLarge: 768px;
+$heightSmall: 500px;
+$mobileMedium: 500px;
+$mobile: 375px;
+$mobileSmall: 320px;

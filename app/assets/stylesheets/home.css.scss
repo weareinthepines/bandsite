@@ -44,11 +44,43 @@
    overflow: hidden;
  }
 
+ p {
+   color: white;
+   font-weight: 300;
+   font-size: x-large;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   margin: 22% auto;
+   float: left;
+ }
+
+#bnbutton {
+  margin: 1% auto;
+  text-align: center;
+  display: table;
+}
+
+
+#bnbutton ul {
+  list-style-type: none;
+  overflow: hidden;
+  float:left;
+}
+
+#bnbutton li {
+  position: relative;
+  float:left;
+  padding: 0px 10px;
+}
+
+#bnbutton li a {
+  color: white;
+  text-decoration: none;
+}
 
 .logos {
   position: relative;
   width: 40%;
-  margin: 18% auto;
+  margin: 10% auto;
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
@@ -62,7 +94,7 @@
 }
 
 
-ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -101,18 +133,12 @@ ul {
   float: left;
 }
 
-#bnbutton {
-text-align: center;
-  margin-top: 1%;
-
-}
-
 #bottom {
   position: fixed;
   top:100%
 }
 
-.bandimals ul {
+#bottom ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;

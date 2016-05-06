@@ -19,7 +19,8 @@ gem 'protected_attributes'      # For protecting model from mass assignment atta
 # gem 'aws-sdk'             # For storing uploaded files on S3
 
 # User handling:
-# gem 'devise'              # For creating and managing users
+ gem 'devise'              # For creating and managing users
+gem 'activeadmin', github: 'activeadmin'
 
 # Social Services: 
 # gem 'omniauth-facebook'   # For gaining Facebook authentication

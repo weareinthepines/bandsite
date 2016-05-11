@@ -4,6 +4,7 @@ class CreateShows < ActiveRecord::Migration
       t.date :date
       t.time :time
       t.string :location
+      t.string :venue
 
       t.timestamp
     end

@@ -7,5 +7,6 @@ Boilerplate::Application.routes.draw do
 
   root to: 'home#index', as: :home
   get '/shows' => 'home#shows'
+  get '/index' => 'home#index'
 
 end

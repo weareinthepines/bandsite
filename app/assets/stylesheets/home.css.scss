@@ -29,22 +29,33 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
- body{
+ #site{
    background-image: url(bkg.png);
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    height:100vh;
- }
-
- #site {
    width: 100%;
-   height: 100vh;
    overflow: hidden;
  }
 
- p {
+#site2{
+  background-image: url(bk2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  width: 100%;
+  overflow: hidden;
+  opacity: .6;
+}
+
+
+
+
+p {
    color: white;
    font-weight: 300;
    font-size: x-large;
@@ -54,7 +65,7 @@
  }
 
 #bnbutton {
-  margin: 1% auto;
+  margin: auto;
   text-align: center;
   display: table;
 }
@@ -135,51 +146,78 @@
 
 #bottom {
   position: fixed;
-  top:100%
+  top:100%;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
-#bottom ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  float:left;
+#band {
+
 }
 
-.bandimals li {
-  position: relative;
-  font-size: 50px;
-  float:left;
-  padding: 0px 6px;
-}
-
-.bandimals li a {
-  position: relative;
-  display: block;
+li {
   color: white;
   text-decoration: none;
 }
 
-#chris{
-
+ul {
+  list-style-type: none;
 }
 
-#michael {
-margin-top: 7%;
+.showslist {
+  position: relative;
+  display: block;
+  margin: 6%;
+  text-align: center;
 }
 
-#tom{
-  width: 62%;
-  margin-left: 14%;
+.showslist li {
+  display: inline-block;
+  font-weight: 300;
+  font-size: x-large;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-#nick {
-  margin-top: 8%;
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.slide-up {
-  top:75%;
+.bit-events {
+  font-size: x-large;
+  font-weight: 300 !important;
+  margin: 0 auto;
+  color:white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  border-bottom: none !important;
 }
 
-.slide-down{
-  top:100%;
+.bit-events a{
+  text-decoration: none;
+  color:white;
+}
+
+.bit-events a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.bit-rsvp-dialog {
+  overflow: hidden !important;
+}
+
+.js {
+  overflow: hidden !important;
+}
+
+iframe {
+  height: 275px !important;
 }

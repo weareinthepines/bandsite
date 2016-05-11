@@ -81,6 +81,7 @@ p {
   position: relative;
   float:left;
   padding: 0px 10px;
+  margin:inherit;
 }
 
 #bnbutton li a {
@@ -220,4 +221,8 @@ h1 {
 
 iframe {
   height: 275px !important;
+}
+
+.dave {
+  padding-top: 0;
 }

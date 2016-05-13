@@ -15,5 +15,4 @@
 //= require lib/modernizr-2.6.2.min
 //= require lib/plugins
 //= require lib/underscore
-//= require animsition.js
 

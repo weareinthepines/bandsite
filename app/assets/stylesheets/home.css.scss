@@ -29,8 +29,13 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+.fading {
+  display: none;
+}
  #site{
    background-image: url(bkg.png);
+
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -41,7 +46,7 @@
  }
 
 #site2{
-  background-image: url(bk2.jpg);
+  background-image: url(bk2%20copy.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,41 +54,28 @@
   height:100vh;
   width: 100%;
   overflow: hidden;
-  opacity: .6;
 }
 
-
-
-
-p {
-   color: white;
-   font-weight: 300;
-   font-size: x-large;
-   font-family: 'Yanone Kaffeesatz', sans-serif;
-   margin: 22% auto;
-   float: left;
- }
+.heydave {
+  padding-top: 0 !important;
+}
 
 #bnbutton {
   margin: auto;
   text-align: center;
-  display: table;
+  display: block;
 }
 
 
 #bnbutton ul {
   list-style-type: none;
   overflow: hidden;
-  float:left;
+  display: inline-flex;
 }
 
 #bnbutton li {
-  position: relative;
-  float:left;
-  padding: 10px;
-  margin:inherit;
-  padding-top: 7%;
   color: white;
+  padding-top:8%;
   font-weight: 300;
   font-size: x-large;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -174,7 +166,7 @@ ul {
 .showslist {
   position: relative;
   display: block;
-  margin: 6%;
+  margin: 6% 20%;
   text-align: center;
 }
 
@@ -198,11 +190,6 @@ h1 {
   margin: 0 auto;
   color:white;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
   border-bottom: none !important;
 }
 
@@ -228,6 +215,3 @@ iframe {
   height: 275px !important;
 }
 
-.heydave {
-  padding-top: 0;
-}

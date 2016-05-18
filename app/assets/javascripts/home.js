@@ -55,3 +55,22 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    function showHeight() {
+        var $show = $(".showslist"),
+            windowHeight = $(window).height(),
+            heightDifference = windowHeight - $show.height();
+
+
+        $show.css({
+            top: heightDifference/4
+        })
+    }
+
+    showHeight();
+
+    $(window).resize(function(){
+        showHeight();
+    });
+});
+

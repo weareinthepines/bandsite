@@ -180,7 +180,7 @@ ul {
 .showslist {
   position: relative;
   display: block;
-  margin: 6% 20%;
+  margin: 0 20%;
   text-align: center;
   background-color: rgba(192,192,192,0.5);
   border-radius: 10px;
@@ -280,3 +280,6 @@ iframe {
   float: right;
 }
 
+.bit-track-artist-header {
+  display: none !important;
+}

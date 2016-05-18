@@ -30,31 +30,6 @@
   to   { opacity: 1; }
 }
 
-.fading {
-  display: none;
-}
- #site{
-   background-image: url(bkg.png);
-
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   height:100vh;
-   width: 100%;
-   overflow: hidden;
- }
-
-#site2{
-  background-image: url(bk2.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:100vh;
-  width: 100%;
-  overflow: hidden;
-}
 
 .heydave {
   padding-top: 0 !important;
@@ -64,6 +39,7 @@
   margin: auto;
   text-align: center;
   display: block;
+  z-index: 1;
 }
 
 
@@ -142,18 +118,6 @@
   float: left;
 }
 
-#bottom {
-  position: fixed;
-  top:100%;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
-#band {
-
-}
-
 li {
   color: white;
   text-decoration: none;
@@ -168,6 +132,8 @@ ul {
   display: block;
   margin: 6% 20%;
   text-align: center;
+  background-color: rgba(192,192,192,0.5);
+  border-radius: 10px;
 }
 
 .showslist li {
@@ -203,15 +169,64 @@ h1 {
   color: white;
 }
 
-.bit-rsvp-dialog {
-  overflow: hidden !important;
-}
-
-.js {
-  overflow: hidden !important;
-}
 
 iframe {
   height: 275px !important;
+}
+
+.window{
+  width:100vw;
+  height:100%;
+  position:absolute;
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+}
+
+#foreverGreen {
+  background-image: url("Twitter-FB_CoverPhoto_ForeverGreen.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+#bottom {
+  background-color: #3b3d76;
+}
+
+@for $i from 1 through 6{
+  .window:nth-child(#{$i}){
+    top:($i - 1) * 100%;
+  }
+}
+
+#animals {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  top: 72%;
+}
+
+#first {
+  background-image: url("bkg.png");
+  background-position: center;
+  background-color: #2db1a3;
+}
+
+#shows {
+  background-image: url("bk2.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #5964a2;
+}
+
+#player {
+  position: relative;
+  float: right;
 }
 

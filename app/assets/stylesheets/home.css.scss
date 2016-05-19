@@ -266,6 +266,7 @@ iframe {
   background-image: url("bkg.png");
   background-position: center;
   background-color: #2db1a3;
+  background-attachment: fixed;
 }
 
 #shows {
@@ -273,6 +274,7 @@ iframe {
   background-position: center;
   background-size: cover;
   background-color: #5964a2;
+  background-attachment: fixed;
 }
 
 #player {

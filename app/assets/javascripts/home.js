@@ -74,3 +74,14 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    function midScroll () {
+        var $foreverGreen = $("#foreverGreen")
+        $foreverGreen.scrollSpeed(1000, 800)
+    }
+
+    midScroll()
+
+
+});
+

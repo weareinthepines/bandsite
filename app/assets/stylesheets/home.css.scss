@@ -135,6 +135,10 @@ $mobileSmall: 320px;
     font-size: 30px;
     padding: 0 4px;
   }
+  @include respond-max($mobileSmall){
+    font-size: 20px;
+    padding: 0 2px;
+  }
 }
 #bandcamp {
   width: 42px;
@@ -148,6 +152,9 @@ $mobileSmall: 320px;
   }
   @include respond-max($mobile){
     width: 30px;
+  }
+  @include respond-max($mobileSmall){
+    width: 20px;
   }
 }
 
@@ -165,6 +172,9 @@ $mobileSmall: 320px;
   }
   @include respond-max($mobile){
     width:60%;
+  }
+  @include respond-max($mobileSmall){
+    width: 40%;
   }
 }
 
@@ -344,6 +354,9 @@ iframe {
 .left {
   @include respond-max($tablet){
     margin-left: 35%;
+  }
+  @include respond-max($mobileSmall){
+    padding-right: 0;
   }
 }
 

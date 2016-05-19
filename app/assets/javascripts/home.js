@@ -80,3 +80,36 @@ $(function() {
     });
 });
 
+
+$(document).ready(function() {
+    function buttonChange() {
+        $("#bandcamp").mouseenter(function () {
+            $(".normal").hide();
+            $(".hover").show();
+        });
+        $("#bandcampalt").mouseleave(function () {
+            $(".hover").hide();
+            $(".normal").show();
+        });
+    }
+
+    buttonChange();
+
+});
+
+$(document).ready(function() {
+    function bnButtonChange() {
+        $("#bn").mouseenter(function(){
+            $(".bnnormal").hide();
+            $(".bnhover").show();
+        });
+        $("#bnalt").mouseleave(function(){
+            $(".bnhover").hide();
+            $(".bnnormal").show();
+        });
+    }
+
+    bnButtonChange();
+
+});
+

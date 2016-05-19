@@ -90,6 +90,14 @@ $mobileSmall: 320px;
   text-decoration: none;
 }
 
+#bnbutton li a:hover {
+  color: #2db1a3;
+}
+
+.bnhover {
+  display: none;
+}
+
 .logos {
   position: relative;
   text-align: center;
@@ -140,6 +148,11 @@ $mobileSmall: 320px;
     padding: 0 2px;
   }
 }
+
+.social li a:hover{
+  color:#2db1a3;
+}
+
 #bandcamp {
   width: 42px;
   padding-top: 15%;
@@ -156,6 +169,28 @@ $mobileSmall: 320px;
   @include respond-max($mobileSmall){
     width: 20px;
   }
+}
+
+#bandcampalt {
+  width: 42px;
+  padding-top: 15%;
+  margin-bottom: -4%;
+  @include respond-max($desktopXLarge){
+    width: 40px;
+  }
+  @include respond-max($desktopLarge){
+    width: 35px;
+  }
+  @include respond-max($mobile){
+    width: 30px;
+  }
+  @include respond-max($mobileSmall){
+    width: 20px;
+  }
+}
+
+.hover {
+  display:none;
 }
 
 .listend {

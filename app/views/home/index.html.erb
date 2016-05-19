@@ -3,7 +3,8 @@
   <div id="bnbutton" class="desktop">
     <ul class="header">
       <li><a href="#shows" class="animsition-link"> SHOWS</a></li>
-      <li class="heydave"><a href="http://www.theblacknumbers.com/" target="_blank"><%= image_tag("bn.png", :class=>"bn", ) %></a></li>
+      <li class="heydave"><a href="http://www.theblacknumbers.com/" target="_blank"><%= image_tag("bn.png", :id=>"bn", :class=>"bnnormal", ) %></a>
+        <a href="http://www.theblacknumbers.com/" target="_blank"><%= image_tag("bnhover.png", :id=>"bnalt", :class=>"bnhover", ) %></a></li>
       <li><a href="mailto:weareinthepines@gmail.com"> CONTACT</a></li>
     </ul>
   </div>
@@ -22,7 +23,8 @@
       <li><a href="https://www.facebook.com/weareinthepines"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
       <li><a href="https://www.instagram.com/weareinthepines/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
       <li><a href="https://twitter.com/weareinthepines"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="https://weareinthepines.bandcamp.com/releases"><%= image_tag("bandcamp-button-bc-circle-black-128.png", :id => "bandcamp") %></a></li>
+      <li><a href="https://weareinthepines.bandcamp.com/releases"><%= image_tag("bandcamp-button-bc-circle-black-128.png", :id => "bandcamp", :class=> "normal" ) %></a>
+        <a href="https://weareinthepines.bandcamp.com/releases"><%= image_tag("bchover.png", :id => "bandcampalt" , :class=> "hover") %></a></li>
        <li><%= image_tag("right.png", :class => "listend right") %></li>
      </ul>
       </div>

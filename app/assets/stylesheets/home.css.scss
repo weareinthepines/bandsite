@@ -105,11 +105,8 @@ $mobileSmall: 320px;
 .white {
   margin: auto;
   padding: 1% 0;
-  @include respond-max($mobile) {
+  @include respond-max($tablet) {
     width: 70%;
-  }
-  @include respond-max($mobileSmall){
-
   }
 }
 
@@ -325,6 +322,7 @@ iframe {
 
 .desktop {
   display: block;
+  padding-right: 40px;
   @include respond-max($tablet){
     display: none;
   }

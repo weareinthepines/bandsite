@@ -58,6 +58,27 @@ $mobileSmall: 320px;
   to   { opacity: 1; }
 }
 
+#first {
+  background-image: url("bkg-min_opt.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #2db1a3;
+  background-attachment: fixed;
+  @include respond-max($tablet){
+    background-attachment: scroll;
+  }
+}
+
+#shows {
+  background-image: url("bk2-min.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #5964a2;
+  background-attachment: fixed;
+  @include respond-max($tablet){
+    display: none;
+  }
+}
 
 .heydave {
   padding-top: 0 !important;
@@ -334,27 +355,6 @@ iframe {
   }
 }
 
-#first {
-  background-image: url("bkg-min_opt.png");
-  background-position: center;
-  background-size: cover;
-  background-color: #2db1a3;
-  background-attachment: fixed;
-  @include respond-max($tablet){
-    background-attachment: scroll;
-  }
-}
-
-#shows {
-  background-image: url("bk2-min.png");
-  background-position: center;
-  background-size: cover;
-  background-color: #5964a2;
-  background-attachment: fixed;
-  @include respond-max($tablet){
-    display: none;
-  }
-}
 
 #player {
   position: relative;

@@ -97,19 +97,3 @@ $(document).ready(function() {
 
 });
 
-$(document).ready(function() {
-    function bnButtonChange() {
-        $("#bn").mouseenter(function(){
-            $(".bnnormal").hide();
-            $(".bnhover").show();
-        });
-        $("#bnalt").mouseleave(function(){
-            $(".bnhover").hide();
-            $(".bnnormal").show();
-        });
-    }
-
-    bnButtonChange();
-
-});
-

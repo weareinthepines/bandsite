@@ -76,7 +76,9 @@ $mobileSmall: 320px;
   background-color: #5964a2;
   background-attachment: fixed;
   @include respond-max($tablet){
-    display: none;
+    background-attachment: scroll;
+    position: absolute;
+    top: 100%;
   }
 }
 
@@ -262,6 +264,9 @@ ul {
   text-align: center;
   background-color: rgba(192,192,192,0.5);
   border-radius: 10px;
+  @include respond-max($tablet){
+    margin:0;
+  }
 }
 
 .showslist li {
@@ -276,6 +281,9 @@ h1 {
   color: white;
   font-weight: 300;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  @include respond-max($tablet){
+    font-size: small;
+  }
 }
 
 .bit-events {
@@ -285,6 +293,9 @@ h1 {
   color:white;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   border-bottom: none !important;
+  @include respond-min($tablet){
+    font-size: small;
+  }
 }
 
 .bit-events a{
@@ -333,9 +344,7 @@ iframe {
 
 #bottom {
   background-color: #3b3d76;
-  @include respond-max($tablet) {
-    display: none;
-  }
+  display: none;
 }
 
 @for $i from 1 through 6{
@@ -370,21 +379,10 @@ iframe {
   padding-right: 40px;
   @include respond-max($tablet){
     display: none;
-  }
-}
-
-.mobile {
-  display: none;
-  margin:auto;
-  @include respond-max($tablet) {
-    display: block;
     margin-right: 5%;
   }
 }
 
-#bottom {
-  display: none;
-}
 
 .left {
   @include respond-max($tablet){
@@ -399,5 +397,20 @@ iframe {
   @include respond-max($tablet) {
     margin-right: 40%;
   }
+}
+
+tr {
+  @include respond-max($tablet){
+    font-size: small !important;
+    margin: 0;
+  }
+}
+
+body, html {
+@include respond-max($tablet) {
+  overflow: hidden;
+  margin:0;
+  height: 100%;
+}
 }
 

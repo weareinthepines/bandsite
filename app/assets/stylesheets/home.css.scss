@@ -293,9 +293,6 @@ h1 {
   color:white;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   border-bottom: none !important;
-  @include respond-min($tablet){
-    font-size: small;
-  }
 }
 
 .bit-events a{
@@ -401,7 +398,7 @@ iframe {
 
 tr {
   @include respond-max($tablet){
-    font-size: small !important;
+    font-size: small;
     margin: 0;
   }
 }
